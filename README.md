@@ -3,7 +3,7 @@
 Keyboards using [FUTO Keyborad](https://github.com/futo-org/android-keyboard)
 
 
-## Istallation
+## Installation
 Follow directions on the [FUTO keyboard layouts git](https://github.com/futo-org/futo-keyboard-layouts?tab=readme-ov-file#custom-layouts)
 
 ---
