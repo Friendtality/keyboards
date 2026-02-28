@@ -3,12 +3,13 @@ attributes: {moreKeyMode: OnlyExplicit}
 #rowHeightMode: FillHeight
 rows:
   - letters: 
-    # U+0311 Combining Inverted Breve
-    # U+032E Combining Breve Below
-    - [ "(", "\\(", "o(", "o\u0311\u032e(", "(o("] 
-    - [ ")", ")/", ")o", ")o\u0311\u032e", ")o)"]
-    - [ "/", "//"]
-    - [ "\\", "\\\\"]
+    - [ "(", "\\(", "o(", "o\u0311\u032E(", "o("]
+    - [ ")" , ")o", ")/", ")o\u0311\u032E"]
+    - [ "[" , "o[", "((o[", "\\[", "/[", "ȏ̮["]
+    - [ "]" , "]o", "]o))", "]/", "]\\", "]ȏ̮"]
+  - letters:
+    - [ "𓆩", "꒰ა"]
+    - [ "𓆪", "໒꒱"]
     - $delete
   - bottom:
     - Eyes|!code/key_to_alt_0_layout
@@ -23,12 +24,10 @@ altPages:
       - "@"
       - "*"
       - [">" , "<"]
-      # U+25CF Black Circle
-      - "\u25cf"
       # U+2B24 Black Large Circle
-      - "\u2b24"
       # U+2B2E Black Vertical Ellipse
-      - "\u2b2e"
+      # U+25CFBlack Circle
+      - ["\u25CF" , "\u2B2E" , "\u2B24"]
       - $delete
     - bottom:
       - Hands|!code/key_to_alt_0_layout
