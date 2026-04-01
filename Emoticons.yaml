@@ -14,6 +14,7 @@ rows:
   - bottom:
     - Eyes|!code/key_to_alt_0_layout
     - Mouth|!code/key_to_alt_1_layout
+    - Misc|!code/key_to_alt_2_layout
     - $space
   
 altPages:
@@ -23,7 +24,15 @@ altPages:
       - "T"
       - "@"
       - "*"
-      - [">" , "<"]
+      # U+2267 Greater-Than Over Equal To
+      # U+2269 GREATER-THAN BUT NOT EQUAL TO
+      # U+2273 GREATER-THAN OR EQUIVALENT TO
+      - [">" , "\u2267", "\u2269", "\u2273"]
+      # U+2266 Less-Than Over Equal To
+      # U+2268 LESS-THAN BUT NOT EQUAL TO
+      # U+2272 LESS-THAN OR EQUIVALENT TO
+      - ["<" , "\u2266", "\u2268", "\u2272"]
+    - letters:
       # U+2B24 Black Large Circle
       # U+2B2E Black Vertical Ellipse
       # U+25CFBlack Circle
@@ -32,15 +41,30 @@ altPages:
     - bottom:
       - Hands|!code/key_to_alt_0_layout
       - Mouth|!code/key_to_alt_1_layout
+      - Misc|!code/key_to_alt_2_layout
       - $space
 
   - - letters:
-      - "w"
+      # U+03C9 GREEK SMALL LETTER OMEGA
+      - ["w", "\u03C9"]
       - ",.,"
       - "v"
       - "_"
       - "-"
+      # U+FE4F Wavy Low Line
+      # U+3030 Wavy Dash
+      - ["~", "\uFE4F", "\u3030"]
     - bottom: 
       - Eyes|!code/key_to_alt_0_layout
       - Hands|!code/key_to_alt_1_layout
+      - Misc |!code/key_to_alt_2_layout
+      - $space
+      
+  - - letters:
+      # U+FF61 HALFWIDTH IDEOGRAPHIC FULL STOP
+      - "\uFF61"
+    - bottom:
+      - Eyes|!code/key_to_alt_0_layout
+      - Mouth|!code/key_to_alt_1_layout
+      - Hands|!code/key_to_alt_2_layout
       - $space
